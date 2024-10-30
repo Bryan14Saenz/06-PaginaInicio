@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.header {
+  background-color: #fff;
+}
+.header .header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #ff0;
+}
+.header .header-nav .nav-logo img {
+  width: 200px;
+}
+.header .header-nav .nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header .header-nav .nav__list .list__item {
+  text-align: center;
+}
+.header .header-nav .nav__list .list__item a {
+  text-transform: uppercase;
+  color: #000;
+}
+.header .header-nav .nav__list .list__item a:hover {
+  text-decoration: underline;
+  color: #0a0;
+}
+
+.main {
+  padding: 10px;
+  background-color: #fff;
+}
+.main .main-texto {
+  text-align: center;
+  margin: 10px;
+}
+.main .main-texto h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 21px;
+}
+.main .main-texto p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.main .main-texto .texto-btn .btn {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.main .main-texto .texto-btn .btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+.main .main-img {
+  width: 250px;
+  margin: auto;
+}
+.main .main-img img {
+  width: 250px;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 10px;
+  background: linear-gradient(to top, #ff0, #fff);
+}
+.footer .footer-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-redes .redes__list {
+  display: flex;
+  gap: 0px 20px;
+}
+.footer .footer-redes .redes__list .list__item a {
+  color: #000;
+  font-size: 20px;
+}
+.footer .footer-contacto {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 700px) {
+  .header .header-nav {
+    justify-content: space-between;
+  }
+  .header .header-nav .nav-logo img {
+    width: 120px;
+  }
+  .header .header-nav .nav__list {
+    margin: 10px;
+    flex-direction: row;
+  }
+  .main {
+    display: flex;
+    height: 66vh;
+  }
+  .main .main-texto {
+    margin: 20px 0px;
+  }
+  .main .main-texto h2 {
+    text-align: left;
+    font-size: 40px;
+  }
+  .main .main-texto p {
+    text-align: left;
+    font-size: 25px;
+  }
+  .main .main-texto .texto-btn .btn {
+    float: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
